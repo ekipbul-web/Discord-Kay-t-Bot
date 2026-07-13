@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: kross-kayit-bot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    envVars:
-      - key: DISCORD_TOKEN
-        value: MTUyNjAxNjAwODkyNDQzMDM3OA.GHpwEf.rbp8SjvRIKhTFutgR36ZUYScdF7oWCYX8AaNYs
