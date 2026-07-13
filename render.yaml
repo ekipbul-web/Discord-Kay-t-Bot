@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: kross-kayit-bot
+    env: python
+    region: frankfurt
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn bot:app
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
